@@ -4,6 +4,7 @@ import {ObjectId} from 'mongodb';
 import {openCollection} from '../../../middleware/storage';
 import {methodNotAllowed} from '../../../utils/method-not-allowed';
 
+// noinspection JSUnusedGlobalSymbols
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   switch (req.method) {
     case 'GET':
