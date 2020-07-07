@@ -1,18 +1,19 @@
 import React, {useEffect} from 'react';
-import PropTypes from 'prop-types';
 import Head from 'next/head';
+import { AppProps } from 'next/app';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import {theme} from '../theme';
 
-const MyApp = (props: any) => {
+// noinspection JSUnusedGlobalSymbols
+export default (props: AppProps) => {
   const { Component, pageProps } = props;
 
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
-      jssStyles.parentElement?.removeChild(jssStyles);
+      jssStyles.parentElement!.removeChild(jssStyles);
     }
   }, []);
 
@@ -29,12 +30,4 @@ const MyApp = (props: any) => {
       </ThemeProvider>
     </React.Fragment>
   );
-};
-
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
-};
-
-// noinspection JSUnusedGlobalSymbols
-export default MyApp;
+}
