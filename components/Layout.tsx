@@ -3,7 +3,7 @@ import Head from 'next/head';
 import {AppBar, Divider, Typography, WithStyles, withStyles} from '@material-ui/core';
 import {styles} from '../theme';
 
-interface Props extends WithStyles {
+interface Props extends WithStyles<typeof styles> {
   title?: string
 }
 
@@ -26,7 +26,7 @@ const Layout: React.FC<Props> = ({children, title = 'This is the default title',
     <main>
       {children}
     </main>
-    <footer>
+    <footer className={classes.footer}>
       <Divider />
       <span>Powered by the awesome Next.JS+Mongo+Material UI</span>
     </footer>

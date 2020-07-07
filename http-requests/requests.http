@@ -1,13 +1,17 @@
+GET http://localhost:3000/api/todos
+
+###
+
+OPTIONS http://localhost:3000/api/todos
+
+###
+
 POST http://localhost:3000/api/todos
 Content-Type: application/json
 
 {
   "title": "Vortrag vorbereiten"
 }
-
-###
-
-GET http://localhost:3000/api/todos
 
 ###
 
@@ -25,4 +29,4 @@ DELETE http://localhost:3000/api/todos/5f04ad061c4ba1306b5fb691
 
 ###
 
-GET http://localhost:3000/api/todos/5f04ad061c4ba1306b5fb691
+GET http://localhost:3000/api/todos/test

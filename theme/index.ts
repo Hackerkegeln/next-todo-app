@@ -2,7 +2,7 @@ import {createMuiTheme} from '@material-ui/core/styles';
 import {createStyles} from '@material-ui/core';
 
 // Create a theme instance.
-const theme = createMuiTheme({
+export const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#409eb6',
@@ -21,18 +21,23 @@ const theme = createMuiTheme({
   }
 });
 
-const styles = createStyles({
+export const styles = createStyles({
   root: {
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
     flexGrow: 1
   },
+  createNewTodo: {
+    marginTop: '1rem'
+  },
+  todoList: {
+    marginTop: '1rem'
+  },
   title: {
-    flexGrow: 3,
     marginBottom: '1rem'
   },
+  footer: {
+    marginTop: '1rem'
+  }
 });
-
-export {theme};
-export {styles};

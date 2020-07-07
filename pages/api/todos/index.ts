@@ -26,7 +26,10 @@ const readAllTodos = async (res: NextApiResponse<TodoItem[]>): Promise<void> => 
 
 const createNewTodo = async (body: InsertTodo, res: NextApiResponse): Promise<void> => {
   const newTodo: TodoItem = {...body, _id: new ObjectId().toHexString()};
-  return updateTodo(newTodo, res);
+  const todoCollection = await openCollection();
+  await todoCollection.updateOne({_id: newTodo._id}, {$set: newTodo}, {upsert: true});
+  res.setHeader('Location', `${process.env.NEXT_PUBLIC_HOST}/api/todos/${newTodo._id}`)
+  res.status(201).end();
 };
 
 const updateTodo = async (body: TodoItem, res: NextApiResponse): Promise<void> => {
