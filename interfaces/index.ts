@@ -8,3 +8,12 @@ export type User = {
   id: number
   name: string
 }
+
+export type TodoItem = {
+  _id: string
+  title: string
+}
+
+export type InsertTodo = {
+  title: string
+}

@@ -1,0 +1,25 @@
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "Vortrag vorbereiten"
+}
+
+
+###
+
+PUT http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "_id": "5f04ab011c4ba1306b5fb68f",
+  "title": "Vortrag halten"
+}
+
+###
+
+GET http://localhost:3000/api/todos
+
+###
+
+DELETE http://localhost:3000/api/todos/5f04ad061c4ba1306b5fb691
