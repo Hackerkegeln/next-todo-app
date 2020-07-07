@@ -1,6 +1,6 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import {openCollection} from '../../../middleware/storage';
-import {methodNotAllowed} from '../../../utils/method-not-allowed';
+import {methodNotAllowed} from '../../../middleware/method-not-allowed';
 
 const deleteTodo = async (id: string, res: NextApiResponse) => {
   const todoCollection = await openCollection();
