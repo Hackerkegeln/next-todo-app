@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should work 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <header
+          class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary Layout-title-9 MuiPaper-elevation4"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h1"
+          >
+            Todos
+          </h1>
+        </header>
+      </div>
+    </header>
+    <main>
+      <div
+        class="TodosPage-root-1"
+      >
+        <div
+          class="CreateNewTodo-createNewTodo-12"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6"
+          >
+            Create new
+          </h6>
+          <form>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-flex-end"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root"
+                >
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                    data-shrink="false"
+                  >
+                    Title
+                  </label>
+                  <div
+                    class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiInput-input"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+                  tabindex="0"
+                  type="submit"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                        />
+                      </svg>
+                    </span>
+                    Create New
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="TodoItemList-todoList-18"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6"
+          >
+            This is what you should do
+          </h6>
+          <ul
+            class="MuiList-root MuiList-padding"
+          >
+            <li
+              class="MuiListItem-container"
+            >
+              <div
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-secondaryAction"
+              >
+                <div
+                  class="MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  >
+                    Work
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiListItemSecondaryAction-root"
+              >
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-container"
+            >
+              <div
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-secondaryAction"
+              >
+                <div
+                  class="MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  >
+                    Drink
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiListItemSecondaryAction-root"
+              >
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="Layout-footer-10"
+    >
+      <hr
+        class="MuiDivider-root"
+      />
+      <span>
+        Powered by the awesome Next.JS+Mongo+Material UI
+      </span>
+    </footer>
+  </div>
+</div>
+`;
