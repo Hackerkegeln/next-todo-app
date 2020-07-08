@@ -1,9 +1,9 @@
 import {TodoItem} from '../../interfaces';
 
-const baseUrl = `${process.env.NEXT_PUBLIC_HOST}/api/todos`;
+const baseUrl = () => `${process.env.NEXT_PUBLIC_HOST}/api/todos`;
 
 export const createTodo = (title: string): Promise<string> =>
-  fetch(baseUrl,
+  fetch(baseUrl(),
     {
       method: 'POST',
       headers: {
@@ -13,7 +13,7 @@ export const createTodo = (title: string): Promise<string> =>
     }).then(response => response.headers.get('Location') || '');
 
 export const readAllTodos = (): Promise<TodoItem[]> =>
-  fetch(baseUrl).then(response => response.json());
+  fetch(baseUrl()).then(response => response.json());
 
 export const deleteTodo = (item: TodoItem): Promise<void> =>
-  fetch(`${baseUrl}/${item._id}`, {method: 'DELETE'}).then();
+  fetch(`${baseUrl()}/${item._id}`, {method: 'DELETE'}).then();
